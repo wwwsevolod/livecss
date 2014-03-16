@@ -32,9 +32,9 @@ Livecss.prototype.start = function(port) {
         var isEventSource = req.headers.accept && req.headers.accept == 'text/event-stream';
         if (path === '/listen' && isEventSource) {
             context.addConnection(req, res);
-        } else if (path === '/Livecss.js') {
+        } else if (path === '/livecss.js') {
             res.writeHead(200, {'Content-Type': 'text/javascript'});
-            res.write(fs.readFileSync(__dirname + '/Livecss.js'));
+            res.write(fs.readFileSync(__dirname + '/livecss.js'));
             res.end();
         } else if (path === '/crossdomain') {
             res.writeHead(200, {'Content-Type': 'text/html'});
