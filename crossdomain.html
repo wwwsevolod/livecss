@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var events = new EventSource('/listen');
+            events.addEventListener('message', function(e) {
+                window.parent.postMessage(e.data, '*');
+            });
+        </script>
+    </body>
+</html>

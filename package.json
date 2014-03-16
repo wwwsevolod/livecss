@@ -1,0 +1,12 @@
+{
+  "name": "livecss",
+  "version": "0.3.0",
+  "description": "Dependency free server for automatically update css files in browser, without page reload",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vsevolod Ivanov",
+  "license": "MIT",
+  "dependencies": {}
+}
